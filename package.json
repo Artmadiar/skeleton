@@ -1,0 +1,30 @@
+{
+  "name": "skeleton",
+  "version": "1.0.0",
+  "description": "Template for project",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Artmadiar/skeleton.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "express-boilerplate"
+  ],
+  "author": "artmadiar@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Artmadiar/skeleton/issues"
+  },
+  "homepage": "https://github.com/Artmadiar/skeleton#readme",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.14.1",
+    "mongodb": "^2.2.24"
+  }
+}
