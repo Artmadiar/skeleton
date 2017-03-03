@@ -1,0 +1,65 @@
+<div class="articles">
+    <h2>Articles</h2>
+
+    {% set articles = [
+        {
+        "id" : 1,
+        "title" : "Новость 1",
+        "content" : "Краткое описание",
+        "descr" : "Полное описание",
+        "pic" : "http://lorempixel.com/400/200",
+        "createdAt" : "03.03.2017",
+        "updatedAt" : "03.03.2017",
+        "deletedAt" : null,
+        "userID" : "User ID"
+        },
+
+        {
+        "id" : 2,
+        "title" : "Новость 2",
+        "content" : "Краткое описание",
+        "descr" : "Полное описание",
+        "pic" : "http://lorempixel.com/400/200",
+        "createdAt" : "03.03.2018",
+        "updatedAt" : "03.03.2018",
+        "deletedAt" : null,
+        "userID" : "User ID"
+        }
+    ] %}
+
+    <div class="articles__list">
+        {% for article in articles %}
+        <div class="articles__item">
+            <div class="articles__item_id">
+                <p>{{ article.id }}</p>
+            </div>
+
+            <div class="articles__item_title">
+                <p>{{ article.title }}</p>
+            </div>
+
+            <div class="articles__item_content">
+                <p>{{ article.content }}</p>
+            </div>
+
+            <div class="articles__item_description">
+                <p> {{ article.descr }}</p>
+            </div>
+
+            <div class="articles__item_image">
+                <img src="{{ article.pic }}" alt="Image">
+            </div>
+
+            <div class="articles__item_dates">
+                <div class="articles__item_date">
+                    <p> {{ article.createdAt }}</p>
+                </div>
+
+                <div class="articles__item_date">
+                    <p> {{ article.updatedAt }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

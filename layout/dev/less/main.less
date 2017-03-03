@@ -1,0 +1,36 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+h2 {
+  padding-left: 10px;
+  margin: 0;
+}
+
+.helper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.articles {
+  &__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  }
+
+  &__item {
+    flex: 0 1 33%;
+    padding: 10px;
+    box-sizing: border-box;
+
+    &_dates {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+

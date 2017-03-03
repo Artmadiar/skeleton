@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Skeleton</title>
+    <link rel="stylesheet" href="css/init.css">
+    <script src="js/bundle.js"></script>
+</head>
+<body>
+    <div class="helper">
+        {% block header %}
+        {% include "header/header.html" %}
+        {% endblock %}
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
+        {% block footer %}
+        {% include "footer/footer.html" %}
+        {% endblock %}
+    </div>
+</body>
+</html>
