@@ -1,9 +1,8 @@
-/**
- * GET /
- * Home page.
- */
-exports.index = (req, res) => {
-  res.render('home', {
-    title: 'Home'
-  });
+'use strict';
+
+module.exports = function(app) {
+
+	app.get('/', function(req, res, next) {
+		res.send('hi!');
+	});
 };
